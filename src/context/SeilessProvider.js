@@ -1,5 +1,5 @@
 import React from 'react'
-import SeilessContext from "./SeilessContext"
+import {SeilessContext} from "./SeilessContext"
 import { useState } from 'react'
 
 const SeilessProvider = (props) => {
