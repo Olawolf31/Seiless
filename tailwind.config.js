@@ -325,7 +325,6 @@ variants: {
   textColor: ['responsive', 'hover', 'focus', 'group-hover'],
   opacity: ['responsive', 'hover', 'focus', 'group-hover'],
   backgroundColor: ['responsive', 'hover', 'focus', 'group-hover'],
-  boxSizing: ['responsive'],
 },
 plugins: [],
 };
