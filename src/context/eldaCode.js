@@ -1,4 +1,4 @@
-import React from "react";
+/* import React from "react";
 import { SeilessContext } from "./SeilessContext";
 import { useState, useEffect, useCallback } from "react";
 import axios from "axios";
@@ -16,14 +16,25 @@ const SeilessProvider = (props) => {
   const searchURL = "https://api.unsplash.com/search/photos";
 
   //fetch URL
-  const fetchURL = useCallback(async () => {
+  const fetchURL = useCallback(async (pageNumber, query) => {
     let newurl;
-    const urlPage = `&page=${pageCount}`;
-    const urlQuery = `&query=${searchQuery}`;
-    if (searchQuery) {
-      newurl = `${searchURL}/?client_id=SLh58pFQUcIQ6Dv87f1ztr0-MEfgAXIEGZGqrXn1XeA${urlPage}${urlQuery}`;
+
+    const paramsObjects = {
+      per_page: IMAGES_PER_PAGE,
+      page: pageNumber,
+      client_id: "SLh58pFQUcIQ6Dv87f1ztr0-MEfgAXIEGZGqrXn1XeA",
+      query: query,
+    };
+
+    const queryString = Object.keys(paramsObjects)
+      .filter((key) => Boolean(paramsObjects[key]))
+      .map((key) => `${key}=${paramsObjects[key]}`)
+      .join("&");
+
+    if (query) {
+      newurl = `${searchURL}/?${queryString}`;
     } else {
-      newurl = `https://api.unsplash.com/photos/?client_id=SLh58pFQUcIQ6Dv87f1ztr0-MEfgAXIEGZGqrXn1XeA&${urlPage}&per_page=${IMAGES_PER_PAGE}`;
+      newurl = `https://api.unsplash.com/photos/?${queryString}`;
     }
 
     try {
@@ -37,13 +48,13 @@ const SeilessProvider = (props) => {
 
       setPagesAmount(amountOfPages);
 
-      setPhotos(searchQuery ? data.results : data);
+      setPhotos(query ? data.results : data);
     } catch (error) {
       console.log(error);
     } finally {
       setIsLoading(false);
     }
-  }, [pageCount, searchQuery]);
+  }, []);
 
   //API sideEffect
   useEffect(() => {
@@ -84,4 +95,4 @@ const SeilessProvider = (props) => {
   );
 };
 
-export default SeilessProvider;
+export default SeilessProvider; */
