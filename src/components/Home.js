@@ -23,6 +23,10 @@ const Home = () => {
         </div>
       </div>
 
+      
+
+      
+
       <div className="py-4 flex items-center justify-center">
         <ReactPaginate
           breakLabel="..."
@@ -34,19 +38,21 @@ const Home = () => {
           previousLabel="previous"
           renderOnZeroPageCount={null}
           className={"flex items-center px-4 py-2 mx-1"}
-          pageClassName={
-            "flex items-center hidden px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md sm:flex dark:bg-gray-800 dark:text-gray-200 hover:bg-blue-600 dark:hover:bg-green-400 hover:text-white dark:hover:text-gray-200"
+          pageLinkClassName={
+            "px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md hidden md:flex dark:bg-gray-800 dark:text-gray-200 hover:bg-blue-600 dark:hover:bg-green-400 hover:text-white dark:hover:text-gray-200 "
           }
           nextClassName={
-            "flex items-center hidden px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md sm:flex dark:bg-gray-800 dark:text-gray-200 hover:bg-blue-600 dark:hover:bg-green-400 hover:text-white dark:hover:text-gray-200"
+            "flex items-center px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md sm:flex dark:bg-gray-800 dark:text-gray-200 hover:bg-blue-600 dark:hover:bg-green-400 hover:text-white dark:hover:text-gray-200"
           }
           previousClassName={
-            "flex items-center hidden px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md sm:flex dark:bg-gray-800 dark:text-gray-200 hover:bg-blue-600 dark:hover:bg-green-400 hover:text-white dark:hover:text-gray-200"
+            "flex items-center px-4 py-2 mx-1 text-gray-700 transition-colors duration-300 transform bg-white rounded-md sm:flex dark:bg-gray-800 dark:text-gray-200 hover:bg-blue-600 dark:hover:bg-green-400 hover:text-white dark:hover:text-gray-200"
           }
-          activeClassName={
-            "flex items-center hidden px-4 py-2 mx-1 text-blue-700 transition-colors duration-300 transform bg-white rounded-md sm:flex dark:bg-blue-800 dark:text-blue-200 hover:bg-blue-600 dark:hover:bg-green-400 hover:text-white dark:hover:text-gray-200"
+          activeLinkClassName={
+            "flex items-center px-4 py-2 mx-1 text-green-700 transition-colors duration-300 transform bg-white hidden rounded-md hidden md:flex hidden dark:bg-green-800 dark:text-green-200 hover:bg-blue-600 dark:hover:bg-green-400 hover:text-white dark:hover:text-green-200"
           }
         />
+
+        
       </div>
     </>
   );

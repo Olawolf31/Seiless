@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const ImageList = (props) => {
   return (
-    <div className="lg:w-1/3 sm:w-full p-4">
+    <div className="lg:w-1/3 md:w-1/2 sm:w-full p-4">
       <Link to={`/photos/${props.id}`}>
         <div className="flex relative">
           <img

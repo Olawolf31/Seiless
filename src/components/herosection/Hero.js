@@ -4,7 +4,7 @@ import Heroimage from "../assets/fantasy.jpg";
 
 const Hero = () => {
   return (
-    <div className="bg-indigo-900 relative overflow-hidden h-1/2">
+    <div className="bg-indigo-900 relative overflow-hidden h-1/2 z-0">
       <img
         src={Heroimage}
         className="absolute h-full w-full object-cover"
