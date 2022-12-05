@@ -23,10 +23,6 @@ const Home = () => {
         </div>
       </div>
 
-      
-
-      
-
       <div className="py-4 flex items-center justify-center">
         <ReactPaginate
           breakLabel="..."
@@ -51,8 +47,6 @@ const Home = () => {
             "flex items-center px-4 py-2 mx-1 text-green-700 transition-colors duration-300 transform bg-white hidden rounded-md hidden md:flex hidden dark:bg-green-800 dark:text-green-200 hover:bg-blue-600 dark:hover:bg-green-400 hover:text-white dark:hover:text-green-200"
           }
         />
-
-        
       </div>
     </>
   );
