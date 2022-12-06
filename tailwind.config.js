@@ -6,14 +6,14 @@ module.exports = {
   theme: {
     extend: {  
       screens: {
-        'sm': '400px',
-        // => @media (min-width: 400px) { ... }
+        'sm': '480px',
+        // => @media (min-width: 480px) { ... }
   
-        'md': '960px',
-        // => @media (min-width: 960px) { ... }
+        'md': '768px',
+        // => @media (min-width: 9768px) { ... }
   
-        'lg': '1440px',
-        // => @media (min-width: 1440px) { ... }
+        'lg': '1240px',
+        // => @media (min-width: 1240px) { ... }
       },
       fontFamily: {
         sans: ["Achivo", ...defaultTheme.fontFamily.sans],
