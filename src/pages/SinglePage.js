@@ -81,7 +81,10 @@ const SinglePage = () => {
           );
         })
       ) : (
-        <h3>loading...</h3>
+        <div class="flex items-center justify-center min-h-screen">
+              <div className="w-8 h-8 border-4 border-blue-200 rounded-full animate-spin"></div>
+              <p class="ml-2">Loading...</p>
+            </div>
       )}
     </>
   );

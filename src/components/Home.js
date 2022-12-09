@@ -15,11 +15,16 @@ const Home = () => {
 
       <div className="container px-5 py-24 mx-auto">
         <div className="flex flex-wrap -m-4">
-          {isLoading
-            ? "Loading"
-            : photos.map((photo) => {
-                return <ImageList key={photo.id} {...photo} />;
-              })}
+          {isLoading ? (
+            <div class="flex items-center justify-center min-h-screen">
+              <div className="w-8 h-8 border-4 border-blue-200 rounded-full animate-spin"></div>
+              <p class="ml-2">Loading...</p>
+            </div>
+          ) : (
+            photos.map((photo) => {
+              return <ImageList key={photo.id} {...photo} />;
+            })
+          )}
         </div>
       </div>
 
